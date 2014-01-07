@@ -18,7 +18,7 @@ Getting Started
       "site_name": "Drupal 7",
       "site_mail": "box@example.com"
     }
-  },
+  }
 ~~~
 
 * Go into the data folder : `cd data`
