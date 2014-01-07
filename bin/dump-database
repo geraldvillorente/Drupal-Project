@@ -12,8 +12,9 @@ include $basepath . '/sites/vdd/settings.php';
 
 $mysql_info = $databases['default']['default'];
 
+// Drop database before adding it again to prevent conflict
 $cmd = sprintf(
-	'mysqldump --add-drop-table -u%s -p%s %s > %s/database/vagrant.sql', 
+	'drush cc all && mysqldump --add-drop-table --add-drop-database -u%s -p%s %s > %s/database/vagrant.sql', 
 	$mysql_info['username'],
 	$mysql_info['password'], 
 	$mysql_info['database'], 
