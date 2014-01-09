@@ -1,23 +1,6 @@
 <?php
 
-/**
- * Add body classes if certain regions have content.
- */
-function xtheme_preprocess_html(&$variables) {
-  // if (!empty($variables['page']['featured'])) {
-  //   $variables['classes_array'][] = 'featured';
-  // }
-
-  // if (!empty($variables['page']['triptych_first'])
-  //   || !empty($variables['page']['triptych_middle'])
-  //   || !empty($variables['page']['triptych_last'])) {
-  //   $variables['classes_array'][] = 'triptych';
-  // }
-
-  // if (!empty($variables['page']['footer_firstcolumn'])
-  //   || !empty($variables['page']['footer_secondcolumn'])
-  //   || !empty($variables['page']['footer_thirdcolumn'])
-  //   || !empty($variables['page']['footer_fourthcolumn'])) {
-  //   $variables['classes_array'][] = 'footer-columns';
-  // }
+// Example process_page hook
+function xtheme_process_page(&$vars) {
+  $vars['logo'] = url( drupal_get_path('theme', 'xtheme').'/logo.png' );
 }
