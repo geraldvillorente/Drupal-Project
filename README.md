@@ -21,7 +21,7 @@ Getting Started
   }
 ~~~
 
-* Go into the data folder : `cd data`
-* Clone this project into the data folder : `git clone git@github.com:jonathanbardo/Drupal-Project.git drupal7`
+* Go into the www folder : `cd www`
+* Clone this project into the www folder : `git clone git@github.com:jonathanbardo/Drupal-Project.git drupal7`
 
 You should now be able to access the following url : `http://vdd/drupal7/`
