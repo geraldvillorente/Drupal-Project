@@ -14,7 +14,7 @@ $mysql_info = $databases['default']['default'];
 
 // Drop database before adding it again to prevent conflict
 $cmd = sprintf(
-	'drush cc all && mysqldump --add-drop-table --add-drop-database -u%s -p%s %s > %s/database/vagrant.sql', 
+	'drush cc all && mysqldump --databases %3$s --add-drop-database -u%1$s -p%2$s %3$s > %4$s/database/vagrant.sql', 
 	$mysql_info['username'],
 	$mysql_info['password'], 
 	$mysql_info['database'], 
